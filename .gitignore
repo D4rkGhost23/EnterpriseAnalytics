@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+pip-log.txt
+
+# Node/Frontend
+node_modules/
+.npm
+dist/
+build/
+*.tsbuildinfo
+
+# Docker volumes (NO subir BD ni cache)
+pgdata/
+redisdata/
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+secrets.json
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+coverage.xml
+
+# Build
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+logs/
+
+# Package managers
+package-lock.json
+yarn.lock
+pip-freeze.txt
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
