@@ -1,7 +1,7 @@
 ### Opción A: Con Docker
 ```bash
 # 1. Iniciar servicios
-cd C:\Users\bryan\OneDrive\Desktop\Proyectos\EnterpriseAnalytics
+cd C:.....\EnterpriseAnalytics
 docker-compose up -d
 
 # 2. Esperar 30 segundos a que la BD inicie
