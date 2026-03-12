@@ -1,9 +1,4 @@
-# 📋 GUÍA DE INICIO RÁPIDO - Enterprise Analytics Platform
-
-## 🚀 Comienza Aquí (5 minutos)
-
-### Opción A: Con Docker (Más rápido ⭐)
-
+### Opción A: Con Docker
 ```bash
 # 1. Iniciar servicios
 cd C:\Users\bryan\OneDrive\Desktop\Proyectos\EnterpriseAnalytics
@@ -20,7 +15,7 @@ docker-compose exec backend python scripts/create_default_users.py
 # Backend API Docs: http://localhost:8000/api/docs
 ```
 
-### Opción B: Sin Docker (Desarrollo manual)
+### Opción B: Sin Docker 
 
 ```bash
 # TERMINAL 1: Backend
@@ -40,29 +35,29 @@ npm run dev
 
 ---
 
-## 🔐 Credenciales por Defecto
+## Credenciales por Defecto
 
 ```
-👤 ADMIN
+ ADMIN
    Email:      admin@example.com
    Contraseña: Admin@12345
 
-👤 ANALYST
+ANALYST
    Email:      analyst@example.com
    Contraseña: Analyst@12345
 
-👤 VIEWER
+VIEWER
    Email:      viewer@example.com
    Contraseña: Viewer@12345
 
-👤 DEMO
+DEMO
    Email:      demo@example.com
    Contraseña: Demo@12345
 ```
 
 ---
 
-## 🌐 Acceder a la Aplicación
+##  Acceder a la Aplicación
 
 | Componente | URL | Descripción |
 |-----------|-----|------------|
@@ -76,7 +71,7 @@ npm run dev
 
 ---
 
-## 📚 Documentación Disponible
+## Documentación Disponible
 
 | Archivo | Contenido |
 |---------|----------|
@@ -90,7 +85,7 @@ npm run dev
 
 ---
 
-## ✅ Verificar que Todo Funciona
+## Verificar que Todo Funciona
 
 ```bash
 # Check 1: ¿Servicios están corriendo?
@@ -116,9 +111,9 @@ docker-compose exec redis redis-cli ping
 
 ---
 
-## 🎯 Primeros Pasos Después de Iniciar
+##  Primeros Pasos Después de Iniciar
 
-### 1. Login (1 min)
+### 1. Login
 ```
 1. Ir a http://localhost:3000
 2. Click en "Login"
@@ -127,7 +122,7 @@ docker-compose exec redis redis-cli ping
 5. Click en "Sign In"
 ```
 
-### 2. Explorar Dashboard (2 min)
+### 2. Explorar Dashboard
 ```
 - Overview: Ver resumen general
 - Datasets: Subir archivos CSV, XLSX, JSON
@@ -136,7 +131,7 @@ docker-compose exec redis redis-cli ping
 - Visualizations: Ver gráficos
 ```
 
-### 3. Probar API (2 min)
+### 3. Probar API
 ```
 1. Ir a http://localhost:8000/api/docs
 2. Click en "Authorize" (arriba derecha)
@@ -150,22 +145,22 @@ docker-compose exec redis redis-cli ping
 
 ---
 
-## 🐛 Problemas Comunes y Soluciones
+##  Problemas Comunes y Soluciones
 
-### ❌ "Connection refused"
+###  "Connection refused"
 ```bash
 # La BD aún está iniciando
 # Solución: Esperar 30 segundos más
 docker-compose logs postgres | grep ready
 ```
 
-### ❌ "Docker no está instalado"
+### "Docker not install"
 ```bash
 # Descargar de: https://www.docker.com/products/docker-desktop
 # Instalar y reiniciar tu computadora
 ```
 
-### ❌ "Port 3000/8000 already in use"
+### "Port 3000/8000 already in use"
 ```bash
 # Windows:
 netstat -ano | findstr :3000
@@ -176,23 +171,16 @@ lsof -i :3000
 kill -9 <PID>
 ```
 
-### ❌ "Login falla - Invalid credentials"
+### "Login falla - Invalid credentials"
 ```bash
 # Asegúrate de estar usando:
 # Email:      admin@example.com (exactamente así)
 # Contraseña: Admin@12345 (con mayúscula y número)
 ```
 
-### ❌ "Frontend se ve feo - estilos no cargan"
-```bash
-# Limpiar caché
-# Presionar Ctrl+Shift+R (Windows) o Cmd+Shift+R (Mac)
-# O abrir DevTools (F12) → Ir a Application → Clear Storage
-```
-
 ---
 
-## 🧪 Ejecutar Tests
+## Ejecutar Tests
 
 ```bash
 # Todos los tests (83 tests)
@@ -212,7 +200,7 @@ pytest tests/ --cov=. --cov-report=html
 
 ---
 
-## 📁 Estructura Clave
+## Estructura Clave
 
 ```
 EnterpriseAnalytics/
@@ -242,7 +230,7 @@ EnterpriseAnalytics/
 
 ---
 
-## 🔄 Ciclo de Desarrollo (Con Auto-reload)
+## Ciclo de Desarrollo (Con Auto-reload)
 
 ```bash
 # TERMINAL 1: Backend (reloads automáticamente)
@@ -258,7 +246,7 @@ npm run dev
 
 ---
 
-## 📊 API Endpoints Principales
+## API Endpoints Principales
 
 ```
 AUTH
@@ -282,7 +270,7 @@ ANALYTICS
 
 ---
 
-## 🎨 Tecnologías Usadas
+## Tecnologías Usadas
 
 **Backend:**
 - FastAPI (Python 3.14)
@@ -300,7 +288,7 @@ ANALYTICS
 
 ---
 
-## 💡 Tips Útiles
+## Tips Útiles
 
 ### Ver logs en tiempo real
 ```bash
@@ -330,7 +318,7 @@ docker-compose exec backend python -c "from core.config import settings; print(s
 
 ---
 
-## ⏱️ Tiempo Estimado
+## Tiempo Estimado
 
 | Tarea | Tiempo |
 |-------|--------|
@@ -342,7 +330,7 @@ docker-compose exec backend python -c "from core.config import settings; print(s
 
 ---
 
-## ✅ Checklist Final
+## Checklist Final
 
 Antes de reportar problemas, verificar:
 
@@ -356,11 +344,10 @@ Antes de reportar problemas, verificar:
 - [ ] Abres http://localhost:3000 (no 0.0.0.0:3000)
 - [ ] Limpias caché del navegador (Ctrl+Shift+R)
 
-Si todo ✅, ¡la app debe funcionar! 🎉
 
 ---
 
-## 🚀 Ahora Qué?
+## Ahora Qué?
 
 1. **Leer documentación:** COMO_EJECUTAR.md (guía completa)
 2. **Probar API:** http://localhost:8000/api/docs (Swagger)
@@ -370,7 +357,7 @@ Si todo ✅, ¡la app debe funcionar! 🎉
 
 ---
 
-## 📞 Para Más Información
+## Para Más Información
 
 Ver estos archivos:
 - `COMO_EJECUTAR.md` - Guía completa y detallada
